@@ -85,12 +85,9 @@
                     // read all links   
                     var links = $.urlHelper.getLinks($(self).val());
                     core.cleanDuplicates(links);
-					
-					console.log(links);
-                    
+					                    
                     if (links != null) {
 						
-						console.log(links.indexOf( preview.url ), ' ', preview.url)
 						if ( links.indexOf( preview.url ) == -1 )
 							core.reinit();
 							
